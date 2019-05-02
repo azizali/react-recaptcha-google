@@ -75,8 +75,8 @@ class ExampleComponent extends Component {
             size="invisible"
             render="explicit"
             sitekey="your_site_key"
-            onloadCallback={this.onLoadRecaptcha}
-            verifyCallback={this.verifyCallback}
+            onLoad={this.onLoadRecaptcha}
+            onSuccess={this.verifyCallback}
         />
         <code>
           1. Add <strong>your site key</strong> in the ReCaptcha component. <br/>
